@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRADE CARIBBEAN V4.3 | By B2B Dominicana SRL</title>
+<style>
+:root{--navy:#315447;--navy2:#416957;--teal:#78ad8d;--cyan:#a8cfb5;--bg:#f3f7f4;--surface:rgba(255,255,255,.88);--surface2:#f7faf8;--text:#172b22;--muted:#718078;--line:#e4ece7;--green:#6f9f82;--amber:#b18b4b;--red:#c85d5d;--purple:#8066b5;--shadow:0 12px 34px rgba(26,75,52,.065)}
+[data-theme="dark"]{--bg:#101b16;--surface:rgba(25,43,34,.94);--surface2:#20372b;--text:#edf7f0;--muted:#a3b8aa;--line:#30483a;--navy:#10251b;--navy2:#183a2a;--shadow:0 12px 34px rgba(0,0,0,.2)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:238px 1fr}.sidebar{background:linear-gradient(180deg,var(--navy),#102333);color:#e9f2f6;padding:22px 14px;display:flex;flex-direction:column;gap:24px}.brand{padding:4px 12px 18px;border-bottom:1px solid #ffffff1c}.brand strong{display:block;font-size:17px;letter-spacing:1.2px}.brand small{color:#9bb4c3;font-size:10px;letter-spacing:1.5px}.nav-label{color:#7693a5;font-size:10px;letter-spacing:1.5px;padding:0 12px;margin:2px 0}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:#b9cbd5;text-align:left;padding:11px 12px;border-radius:9px;display:flex;align-items:center;gap:12px;transition:.2s}.nav button:hover,.nav button.active{background:#ffffff16;color:#fff}.nav button.active{box-shadow:inset 3px 0 var(--cyan)}.nav .ico{width:18px;text-align:center;font-size:16px}.side-foot{margin-top:auto;color:#8ca5b5;font-size:11px;padding:12px}.main{min-width:0}.topbar{height:66px;background:var(--surface);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 30px;position:sticky;top:0;z-index:5}.crumb{color:var(--muted);font-size:12px}.top-actions{display:flex;align-items:center;gap:12px}.theme-select{background:var(--surface2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 10px}.avatar{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#2f9bb2,#d2b85c);display:grid;place-items:center;color:white;font-weight:700}.content{padding:28px 30px 50px;max-width:1600px;margin:auto}.welcome{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:24px}.welcome h1{font-size:25px;margin:0 0 4px;letter-spacing:-.6px}.welcome p{margin:0;color:var(--muted)}.eyebrow{font-size:10px;color:var(--teal);font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.btn{border:1px solid var(--line);background:var(--surface);color:var(--text);padding:9px 13px;border-radius:8px;font-weight:650}.btn.primary{background:var(--teal);color:white;border-color:var(--teal)}.btn:hover{filter:brightness(.97)}.btn-row{display:flex;gap:8px;flex-wrap:wrap}.grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:13px;box-shadow:var(--shadow);padding:18px;min-width:0}.kpi{display:flex;justify-content:space-between;align-items:center;min-height:106px}.kpi .label{color:var(--muted);font-size:12px}.kpi .value{font-size:25px;font-weight:760;letter-spacing:-.8px;margin-top:5px}.kpi .symbol{width:40px;height:40px;border-radius:11px;background:var(--surface2);display:grid;place-items:center;color:var(--teal);font-size:19px}.two{grid-template-columns:1.55fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.section-title{display:flex;justify-content:space-between;align-items:center;margin:0 0 14px}.section-title h2{font-size:15px;margin:0}.section-title small{color:var(--muted)}.chart{height:210px;display:flex;align-items:end;gap:15px;padding:12px 8px 4px;border-bottom:1px solid var(--line);background:repeating-linear-gradient(to bottom,transparent 0,transparent 48px,var(--line) 49px)}.bar-wrap{height:100%;flex:1;display:flex;flex-direction:column;justify-content:end;align-items:center;gap:7px}.bar{width:min(45px,70%);border-radius:6px 6px 0 0;background:linear-gradient(180deg,#58bdc8,#187f93);min-height:3px}.bar.alt{background:linear-gradient(180deg,#e9c46b,#d48c32)}.bar-label{font-size:10px;color:var(--muted)}.legend{display:flex;gap:14px;color:var(--muted);font-size:11px;margin-top:12px}.dot{width:7px;height:7px;display:inline-block;border-radius:50%;background:var(--teal);margin-right:5px}.dot.amber{background:#d99a3b}.donut-wrap{display:flex;align-items:center;justify-content:center;gap:22px;min-height:190px}.donut{width:138px;height:138px;border-radius:50%;background:conic-gradient(#197f95 0 46%,#51bdc6 46% 75%,#e5b65a 75% 100%);position:relative}.donut:after{content:"";position:absolute;inset:19px;background:var(--surface);border-radius:50%}.donut-center{position:absolute;z-index:1;inset:0;display:grid;place-content:center;text-align:center;font-weight:750}.donut-center small{font-size:10px;color:var(--muted);font-weight:500}.metric-list{display:grid;gap:12px;min-width:125px}.metric-row{display:flex;justify-content:space-between;gap:10px;font-size:12px}.metric-row span{color:var(--muted)}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:620px}th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--line);font-size:12px}th{color:var(--muted);font-weight:650;background:var(--surface2)}td strong{font-weight:700}.status{display:inline-block;border-radius:20px;padding:3px 8px;background:#e7f6f1;color:#148363;font-size:10px;font-weight:700}.status.warn{background:#fff3df;color:#a96b14}.page{display:none}.page.active{display:block}.form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.field{display:grid;gap:6px}.field label{font-size:11px;color:var(--muted);font-weight:650}.field input,.field select{width:100%;padding:10px 11px;border:1px solid var(--line);border-radius:8px;background:var(--surface2);color:var(--text);outline:none}.field input:focus,.field select:focus{border-color:var(--teal);box-shadow:0 0 0 3px #8db8a01a}.field small{color:var(--muted);font-size:10px}.subhead{font-size:13px;font-weight:750;margin:20px 0 12px}.result-box{background:var(--navy2);color:#f2f7fa;border-radius:12px;padding:17px}.result-box .muted{color:#a9c1ce;font-size:11px}.result-box .big{font-size:26px;font-weight:800;margin:4px 0}.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.result-mini{background:#ffffff12;padding:10px;border-radius:8px}.result-mini small{display:block;color:#a9c1ce;font-size:10px}.result-mini b{font-size:14px}.note{border-left:3px solid var(--amber);padding:10px 12px;background:var(--surface2);color:var(--muted);font-size:11px;border-radius:0 7px 7px 0;margin:12px 0}.inline-input{width:90px;padding:7px;border:1px solid var(--line);border-radius:6px;background:var(--surface2);color:var(--text)}.positive{color:var(--green)}.negative{color:var(--red)}.muted{color:var(--muted)}.footer{text-align:center;color:var(--muted);font-size:10px;padding:25px 0}.mobile-menu{display:none;border:0;background:transparent;color:var(--text);font-size:22px}
+@media(max-width:1050px){.kpis{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.form-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.app{grid-template-columns:1fr}.sidebar{position:fixed;z-index:10;left:-250px;top:0;bottom:0;width:238px;transition:.25s}.sidebar.open{left:0}.mobile-menu{display:block}.topbar{padding:0 15px}.content{padding:20px 14px}.welcome{align-items:flex-start;flex-direction:column}.kpis{grid-template-columns:1fr 1fr;gap:9px}.kpi{padding:13px;min-height:90px}.kpi .value{font-size:20px}.card{padding:14px}.form-grid{grid-template-columns:1fr}.result-grid{grid-template-columns:1fr}.donut-wrap{flex-direction:column}.top-actions{gap:6px}.avatar{display:none}}
+
+/* TRADE CARIBBEAN V4.2 — Emerald glass visual system */
+body{background:radial-gradient(ellipse at 78% 0%,rgba(157,190,168,.10),transparent 34%),var(--bg)}
+.sidebar{background:linear-gradient(180deg,#315447 0%,#102d24 100%);box-shadow:8px 0 35px rgba(23,74,49,.08)}
+.brand strong{letter-spacing:.7px;font-size:16px}.brand:before{content:"✳";display:inline-grid;place-items:center;width:29px;height:29px;border-radius:10px;background:linear-gradient(135deg,#7ce0a8,#6f9f82);color:#123d2a;margin:0 9px 0 0;font-size:17px;vertical-align:middle}
+.nav button{border-radius:12px;padding:12px}.nav button.active{background:linear-gradient(90deg,rgba(89,204,139,.2),rgba(255,255,255,.07));box-shadow:inset 3px 0 #77dfa5}
+.topbar{background:rgba(255,255,255,.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(221,234,225,.8)}
+[data-theme="dark"] .topbar{background:rgba(22,39,30,.84)}
+.content{padding-top:32px}.welcome h1{font-size:29px;letter-spacing:-1.1px;font-weight:720}.eyebrow{color:#729f83;letter-spacing:1.7px}
+.card{border:1px solid rgba(219,233,224,.88);border-radius:18px;background:var(--surface);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 10px 30px rgba(76,112,88,.045),inset 0 1px rgba(255,255,255,.72)}
+[data-theme="dark"] .card{border-color:rgba(91,132,105,.28);box-shadow:0 10px 30px rgba(0,0,0,.14)}
+.kpi{min-height:120px}.kpi .symbol{background:linear-gradient(145deg,#edf5ef,#f5fbf7);color:#729f83;border:1px solid #e4eee7;border-radius:13px}
+[data-theme="dark"] .kpi .symbol{background:#244432;border-color:#315a40;color:#8be0ac}
+.kpi .value{font-weight:750;letter-spacing:-1px}.btn{border-radius:11px;padding:10px 15px;transition:transform .18s,box-shadow .18s,border-color .18s}.btn:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(24,106,64,.1)}
+.btn.primary{background:linear-gradient(135deg,#83b99a,#668f78);border-color:#15965b;box-shadow:0 6px 15px rgba(25,157,94,.17)}
+.field input,.field select,.inline-input{border-radius:11px;border-color:#e0ebe3;background:rgba(248,251,249,.9);padding:11px 12px}
+[data-theme="dark"] .field input,[data-theme="dark"] .field select,[data-theme="dark"] .inline-input{background:#1b3024;border-color:#385341}
+.field input:focus,.field select:focus{border-color:#9abda5;box-shadow:0 0 0 4px rgba(49,180,105,.12)}
+.result-box{background:linear-gradient(135deg,#173f2e,#216344);border:1px solid rgba(255,255,255,.12);border-radius:17px;box-shadow:0 12px 28px rgba(23,81,49,.13)}
+.status{background:#edf5ef;color:#16864f}.status.warn{background:#fff5e4;color:#9d6d20}
+.chart{background:repeating-linear-gradient(to bottom,transparent 0,transparent 48px,var(--line) 49px);border-radius:12px}
+.bar{background:linear-gradient(180deg,#78dba1,#769e83)}.bar.alt{background:linear-gradient(180deg,#b9a3df,#8066b5)}
+.dot{background:#82ad91}.dot.amber{background:#8066b5}
+.donut{background:conic-gradient(#83ad91 0 46%,#7bd9a1 46% 75%,#9b83ca 75% 100%)}
+.note{border-left-color:#8c75bd;border-radius:0 12px 12px 0;background:rgba(239,247,241,.82)}
+.assistant-card{display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:13px;background:linear-gradient(110deg,rgba(239,246,240,.96),rgba(250,252,250,.94));border:1px solid #d9efe1;border-radius:17px;padding:16px 18px;margin:0 0 17px;box-shadow:0 10px 25px rgba(76,112,88,.045)}
+[data-theme="dark"] .assistant-card{background:linear-gradient(110deg,#1d3b2a,#1b3024);border-color:#345741}
+.assistant-icon{width:40px;height:40px;border-radius:13px;background:linear-gradient(140deg,#76dda2,#1a9c60);display:grid;place-items:center;color:#10452b;font-size:19px}
+.assistant-card strong{display:block;font-size:13px}.assistant-card p{margin:3px 0 0;color:var(--muted);font-size:11px}
+.assistant-tag{font-size:10px;color:#188d55;background:#edf5ef;border-radius:20px;padding:6px 9px;white-space:nowrap}
+.pdf-actions{display:flex;gap:8px;flex-wrap:wrap}
+@media(max-width:720px){.assistant-card{grid-template-columns:38px 1fr}.assistant-tag{grid-column:2}.welcome h1{font-size:25px}}
+@media print{
+  body{background:#fff!important;color:#172b22!important}.sidebar,.topbar,.btn,.mobile-menu,.footer,.nav,.pdf-actions{display:none!important}
+  .app{display:block}.main,.content{padding:0!important;margin:0!important;max-width:none!important}
+  .page{display:none!important}.page.active{display:block!important}
+  .card,.result-box{box-shadow:none!important;backdrop-filter:none!important;break-inside:avoid;border:1px solid #dce8df!important}
+  .card{margin-bottom:12px!important}.welcome{margin-bottom:12px!important}
+  table{min-width:0!important}th,td{font-size:9px!important;padding:6px!important}
+  .assistant-card{display:none!important}
+  body[data-pdf-mode="executive"] #page-import .card,
+  body[data-pdf-mode="executive"] #page-allocation,
+  body[data-pdf-mode="executive"] #page-taxes,
+  body[data-pdf-mode="executive"] #page-history,
+  body[data-pdf-mode="executive"] #page-settings{display:none!important}
+  body[data-pdf-mode="executive"] #page-dashboard .grid.two{display:none!important}
+  body[data-pdf-mode="executive"] #page-dashboard .card{margin-bottom:10px}
+  @page{size:A4;margin:14mm}
+}
+
+
+/* V4.0 · Liquid Glass: restrained frosted surfaces and soft sage accents */
+:root{--glass-line:rgba(255,255,255,.72);--glass-shadow:0 14px 38px rgba(55,83,64,.075)}
+body{background:radial-gradient(ellipse at 12% 0%,rgba(193,215,198,.28),transparent 38%),radial-gradient(ellipse at 95% 12%,rgba(220,229,221,.42),transparent 34%),#f4f7f4}
+.sidebar{background:rgba(249,251,249,.78);color:#42584a;border-right:1px solid rgba(211,224,214,.8);box-shadow:8px 0 32px rgba(57,82,65,.035);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.brand{border-bottom-color:rgba(198,214,202,.8)}.brand strong{color:#4f7059}.brand small,.nav-label,.side-foot{color:#8a9b8e}
+.nav button{color:#6c7c70}.nav button:hover,.nav button.active{background:rgba(168,195,174,.18);color:#496a54}.nav button.active{box-shadow:inset 3px 0 #8eae96}
+.topbar{background:rgba(255,255,255,.64);border-bottom-color:rgba(214,226,216,.72);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+.card,.assistant-card{background:rgba(255,255,255,.68);border:1px solid rgba(255,255,255,.86);backdrop-filter:blur(22px) saturate(125%);-webkit-backdrop-filter:blur(22px) saturate(125%);box-shadow:var(--glass-shadow),inset 0 1px rgba(255,255,255,.8)}
+.card{border-color:rgba(219,230,221,.72)}
+.btn{background:rgba(255,255,255,.65);border-color:rgba(210,224,213,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.btn.primary{background:linear-gradient(135deg,#a9c6af,#85a98e);border-color:#91b39a;color:#fff;box-shadow:0 5px 14px rgba(93,131,102,.12)}
+.field input,.field select,.inline-input{background:rgba(250,252,250,.72);border-color:rgba(212,225,215,.9)}
+.result-box{background:linear-gradient(135deg,rgba(105,139,113,.94),rgba(75,112,84,.96));box-shadow:0 12px 28px rgba(67,100,75,.12)}
+.assistant-card{background:rgba(247,250,247,.72);border-color:rgba(220,231,221,.85)}
+.assistant-icon{background:linear-gradient(140deg,#c7daca,#93b59b);color:#4c6d55}
+.assistant-tag{background:#edf3ee;color:#6b8b72}
+[data-theme="dark"] .sidebar{background:rgba(23,38,29,.86);color:#dbe8de;border-color:#314738}
+[data-theme="dark"] .brand strong{color:#dce9df}
+[data-theme="dark"] .nav button{color:#b7c8ba}
+[data-theme="dark"] .nav button.active{background:rgba(143,177,150,.16);color:#e7f0e9}
+[data-theme="dark"] .card,[data-theme="dark"] @media(max-width:720px){.sidebar{background:rgba(249,251,249,.94)}}
+
+
+/* V4.2 — neutral dark mode, crisp light mode, accessible contrast */
+:root{color-scheme:light;--bg:#f5f7f6;--surface:rgba(255,255,255,.94);--surface2:#f0f3f1;--text:#17211c;--muted:#58665e;--line:#dce3de;--navy:#f8faf8;--navy2:#e9efeb;--teal:#789b82;--green:#557e61;--shadow:0 12px 32px rgba(24,39,30,.055)}
+[data-theme="dark"]{color-scheme:dark;--bg:#111315;--surface:rgba(30,33,36,.97);--surface2:#25292d;--text:#f3f5f6;--muted:#c0c7cc;--line:#41484e;--navy:#191d21;--navy2:#242a2f;--teal:#8eaa96;--green:#9bc5a5;--amber:#e2bd78;--red:#ff8989;--shadow:0 14px 36px rgba(0,0,0,.32)}
+body{background:var(--bg)!important;color:var(--text)!important}
+.sidebar{background:var(--surface)!important;color:var(--text)!important;border-right:1px solid var(--line)!important;box-shadow:5px 0 24px rgba(0,0,0,.035)!important;backdrop-filter:blur(20px)}
+.brand strong,.nav button,.nav-label,.brand small,.side-foot{color:var(--text)!important}.brand small,.nav-label,.side-foot{opacity:.72}.nav button{color:var(--muted)!important}.nav button:hover,.nav button.active{background:rgba(120,155,130,.14)!important;color:var(--text)!important}.nav button.active{box-shadow:inset 3px 0 var(--teal)!important}
+.topbar{background:var(--surface)!important;border-color:var(--line)!important}.card,.assistant-card{background:var(--surface)!important;border:1px solid var(--line)!important;box-shadow:var(--shadow)!important;backdrop-filter:blur(18px)}
+.field input,.field select,.inline-input,.theme-btn{background:var(--surface2)!important;color:var(--text)!important;border-color:var(--line)!important}.field label,.field small,.muted,.crumb,.section-title small{color:var(--muted)!important}.field input:focus,.field select:focus{border-color:var(--teal)!important;box-shadow:0 0 0 3px rgba(120,155,130,.2)!important}
+th{background:var(--surface2)!important;color:var(--text)!important}td{color:var(--text)}
+.result-box{background:linear-gradient(135deg,#526e5a,#3f5947)!important;color:#fff!important}.result-box .muted,.result-mini small{color:#edf4ef!important}.btn{background:var(--surface2);color:var(--text);border-color:var(--line)}.btn.primary{background:#66866f!important;border-color:#66866f!important;color:#fff!important}
+.theme-toggle{display:inline-flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);box-shadow:inset 0 1px rgba(255,255,255,.35)}.theme-btn{border:1px solid transparent!important;border-radius:9px!important;padding:7px 11px!important;font-size:12px!important;font-weight:700!important;line-height:1.2;cursor:pointer;transition:all .18s ease;white-space:nowrap}.theme-btn.active{background:var(--surface)!important;border-color:var(--line)!important;box-shadow:0 2px 8px rgba(0,0,0,.09)!important;color:var(--text)!important}.theme-btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px}.settings-toggle{width:max-content}
+[data-theme="dark"] body{background:#111315!important}[data-theme="dark"] .sidebar{background:#191d21!important}[data-theme="dark"] .topbar{background:rgba(25,29,33,.96)!important}[data-theme="dark"] .card,[data-theme="dark"] .assistant-card{background:#1e2226!important;border-color:#41484e!important}[data-theme="dark"] .field input,[data-theme="dark"] .field select,[data-theme="dark"] .inline-input{background:#252a2f!important;color:#f3f5f6!important;border-color:#4a5259!important}[data-theme="dark"] .nav button{color:#c0c7cc!important}[data-theme="dark"] .nav button.active{color:#fff!important;background:#303a33!important}[data-theme="dark"] .brand strong,[data-theme="dark"] .welcome h1,[data-theme="dark"] .section-title h2,[data-theme="dark"] th,[data-theme="dark"] td,[data-theme="dark"] .kpi .value{color:#f3f5f6!important}[data-theme="dark"] .muted,[data-theme="dark"] .field label,[data-theme="dark"] .field small,[data-theme="dark"] .crumb,[data-theme="dark"] .section-title small{color:#c0c7cc!important}[data-theme="dark"] .note{background:#252a2f!important;color:#d4d9dd!important;border-left-color:#c6a36b}[data-theme="dark"] .kpi .symbol{background:#2b3430!important;color:#b8d2be!important;border-color:#46544a!important}[data-theme="dark"] .theme-btn.active{background:#343a3f!important;color:#fff!important}
+@media(max-width:720px){.theme-btn{padding:7px 8px!important}.theme-btn span{display:none}.settings-toggle .theme-btn span{display:inline}}
+
+
+/* TRADE CARIBBEAN — EXECUTIVE BLUE identity */
+:root{--navy:#14243A;--navy2:#203653;--teal:#3478D4;--cyan:#78A9EE;--bg:#F5F7FA;--surface:rgba(255,255,255,.96);--surface2:#EEF2F7;--text:#202B3A;--muted:#68778A;--line:#DFE6EF;--green:#3478D4;--amber:#C58A35;--red:#C6535B;--purple:#7766B2;--shadow:0 10px 28px rgba(20,36,58,.055)}
+html,body{background:var(--bg)!important;color:var(--text)!important}
+body{background:radial-gradient(ellipse at 78% 0%,rgba(52,120,212,.055),transparent 36%),var(--bg)!important}
+.sidebar{background:linear-gradient(180deg,#14243A 0%,#1C3452 100%)!important;color:#F3F6FA!important;box-shadow:8px 0 30px rgba(20,36,58,.08)!important}
+.brand:before{background:linear-gradient(135deg,#78A9EE,#3478D4)!important;color:#fff!important}
+.brand strong{color:#fff!important}.brand small{color:#B8C9DE!important}
+.nav-label{color:#9DB2CC!important}.nav button{color:#D0D9E5!important}.nav button:hover,.nav button.active{background:rgba(255,255,255,.11)!important;color:#fff!important}.nav button.active{box-shadow:inset 3px 0 #78A9EE!important}
+.topbar{background:rgba(255,255,255,.88)!important;border-color:var(--line)!important}
+.eyebrow{color:#3478D4!important}.card{border:1px solid var(--line)!important;border-radius:15px!important;background:var(--surface)!important;box-shadow:var(--shadow)!important}
+.kpi .symbol{background:#EAF1FB!important;color:#3478D4!important;border:1px solid #DCE7F6!important}
+.btn{border-color:var(--line)!important}.btn.primary{background:#3478D4!important;border-color:#3478D4!important;color:#fff!important;box-shadow:0 5px 14px rgba(52,120,212,.16)!important}
+.btn:hover{box-shadow:0 6px 16px rgba(20,36,58,.09)!important}
+.field input:focus,.field select:focus{border-color:#3478D4!important;box-shadow:0 0 0 3px rgba(52,120,212,.14)!important}
+.result-box{background:linear-gradient(135deg,#14243A,#294B75)!important;color:#fff!important}.result-box .muted,.result-mini small{color:#D6E2F1!important}
+.status{background:#EAF1FB!important;color:#285EAA!important}.status.warn{background:#FFF3DF!important;color:#98631B!important}
+.chart .bar{background:linear-gradient(180deg,#78A9EE,#3478D4)!important}.chart .bar.alt{background:linear-gradient(180deg,#A8BBD2,#6F87A5)!important}.dot{background:#3478D4!important}
+.theme-btn.active{color:#203653!important}.theme-btn:focus-visible{outline:2px solid #3478D4!important}
+[data-theme="dark"]{--bg:#15191F;--surface:#20262E;--surface2:#272F39;--text:#F1F4F8;--muted:#AEB9C7;--line:#394451;--navy:#14243A;--navy2:#203653;--teal:#78A9EE;--green:#78A9EE;--shadow:0 14px 36px rgba(0,0,0,.30)}
+[data-theme="dark"] body{background:#15191F!important;color:#F1F4F8!important}
+[data-theme="dark"] .sidebar{background:linear-gradient(180deg,#101B2A,#14243A)!important;border-right:1px solid #303B49!important}
+[data-theme="dark"] .topbar{background:rgba(28,34,42,.96)!important;border-color:#394451!important}
+[data-theme="dark"] .card,[data-theme="dark"] .assistant-card{background:#20262E!important;border-color:#394451!important}
+[data-theme="dark"] .field input,[data-theme="dark"] .field select,[data-theme="dark"] .inline-input,[data-theme="dark"] .theme-btn{background:#272F39!important;color:#F1F4F8!important;border-color:#465363!important}
+[data-theme="dark"] .nav button{color:#C5CFDB!important}[data-theme="dark"] .nav button.active{background:rgba(120,169,238,.15)!important;color:#fff!important;box-shadow:inset 3px 0 #78A9EE!important}
+[data-theme="dark"] .kpi .symbol{background:#29384B!important;color:#91B9F0!important;border-color:#3D526D!important}
+[data-theme="dark"] th{background:#29313C!important;color:#E5EBF2!important}[data-theme="dark"] td{color:#E5EBF2!important}
+[data-theme="dark"] .note{background:#272F39!important;color:#C4CEDA!important;border-left-color:#78A9EE!important}
+[data-theme="dark"] .btn.primary{background:#3478D4!important;border-color:#3478D4!important}
+
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><strong>TRADE CARIBBEAN</strong><small>BY B2B DOMINICANA SRL</small></div>
+  <div><div class="nav-label">WORKSPACE</div><nav class="nav">
+    <button class="active" data-page="dashboard"><span class="ico">▦</span> Dashboard</button>
+    <button data-page="import"><span class="ico">⇧</span> Nueva importación</button>
+    <button data-page="cif"><span class="ico">◎</span> Calculadora CIF</button>
+    <button data-page="allocation"><span class="ico">▤</span> Distribución de costos</button>
+    <button data-page="taxes"><span class="ico">▧</span> Impuestos y aduanas</button>
+    <button data-page="profit"><span class="ico">↗</span> Rentabilidad</button>
+    <button data-page="history"><span class="ico">◷</span> Historial</button>
+  </nav></div>
+  <div><div class="nav-label">PREFERENCIAS</div><nav class="nav"><button data-page="settings"><span class="ico">⚙</span> Configuración</button></nav></div>
+  <div class="side-foot">TRADE INTELLIGENCE<br>Versión 4.1</div>
+</aside>
+<main class="main">
+<header class="topbar"><div style="display:flex;align-items:center;gap:13px"><button class="mobile-menu" id="menuBtn">☰</button><span class="crumb">Workspace&nbsp; / &nbsp;<b id="crumb">Dashboard</b></span></div><div class="top-actions"><div class="theme-toggle" role="group" aria-label="Apariencia"><button type="button" class="theme-btn" data-theme-choice="light" aria-pressed="false">☀ <span>Claro</span></button><button type="button" class="theme-btn" data-theme-choice="dark" aria-pressed="false">☾ <span>Oscuro</span></button></div><div class="avatar">B2B</div></div></header>
+<div class="content">
+
+<section class="page active" id="page-dashboard">
+  <div class="welcome"><div><div class="eyebrow">IMPORT & TRADE INTELLIGENCE</div><h1>Business Overview</h1><p>Resumen ejecutivo de tus operaciones de importación.</p></div><div class="btn-row"><button class="btn" data-go="history">Ver historial</button><button class="btn primary" data-go="import">＋ Nueva importación</button></div></div><div class="assistant-card"><div class="assistant-icon">✦</div><div><strong>Trade AI Insight</strong><p>Panel de asistencia visual preparado para análisis inteligente. La conexión real a IA requiere integración de servicio.</p></div><span class="assistant-tag">Asistente visual</span></div><div class="pdf-actions" style="margin-bottom:16px"><button class="btn" id="pdfExecutive">↗ PDF ejecutivo</button><button class="btn" id="pdfDetailed">▤ PDF detallado</button></div>
+  <div class="card" style="margin:0 0 16px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div><b style="font-size:12px">Costo unitario en los PDF</b><div class="muted" style="font-size:11px">Puedes mostrar u ocultar el costo por unidad en ambos informes.</div></div>
+    <label style="display:flex;align-items:center;gap:8px;font-size:12px"><input type="checkbox" id="includeUnitCost" checked> Incluir costo unitario</label>
+  </div>
+  <div class="grid kpis">
+    <div class="card kpi"><div><div class="label">Valor CIF estimado</div><div class="value" id="dashCif">$0.00</div><div class="muted" style="font-size:10px">USD · operación actual</div></div><div class="symbol">◎</div></div>
+    <div class="card kpi"><div><div class="label">Unidades registradas</div><div class="value" id="dashUnits">0</div><div class="muted" style="font-size:10px">unidades</div></div><div class="symbol">▤</div></div>
+    <div class="card kpi"><div><div class="label">Impuestos estimados</div><div class="value" id="dashTax">RD$0</div><div class="muted" style="font-size:10px">tasas de prueba</div></div><div class="symbol">▧</div></div>
+    <div class="card kpi"><div><div class="label">Utilidad proyectada</div><div class="value" id="dashProfit">RD$0</div><div class="muted" style="font-size:10px">según precio de venta</div></div><div class="symbol">↗</div></div>
+  </div>
+  <div class="grid two">
+    <div class="card"><div class="section-title"><h2>Investment Snapshot</h2><small>Distribución ilustrativa</small></div><div class="chart"><div class="bar-wrap"><div class="bar alt" style="height:45%"></div><span class="bar-label">FOB</span></div><div class="bar-wrap"><div class="bar" style="height:18%"></div><span class="bar-label">Flete</span></div><div class="bar-wrap"><div class="bar" style="height:10%"></div><span class="bar-label">Seguro</span></div><div class="bar-wrap"><div class="bar alt" style="height:34%"></div><span class="bar-label">Tributos</span></div><div class="bar-wrap"><div class="bar" style="height:23%"></div><span class="bar-label">Otros</span></div></div><div class="legend"><span><i class="dot"></i>Costos logísticos</span><span><i class="dot amber"></i>Mercancía / tributos</span></div></div>
+    <div class="card"><div class="section-title"><h2>Importation Status</h2><small>Estado del cálculo</small></div><div class="donut-wrap"><div class="donut"><div class="donut-center">V1.0<small>Demo</small></div></div><div class="metric-list"><div class="metric-row"><span>Datos ingresados</span><b id="statusData">Pendiente</b></div><div class="metric-row"><span>Distribución</span><b id="statusAlloc">Pendiente</b></div><div class="metric-row"><span>Impuestos</span><b id="statusTax">Pendiente</b></div><div class="metric-row"><span>Rentabilidad</span><b id="statusProfit">Pendiente</b></div></div></div></div>
+  </div>
+  <div class="card" style="margin-top:16px"><div class="section-title"><h2>Current Importation</h2><small id="dashProduct">Sin mercancía registrada</small></div><div class="table-wrap"><table><thead><tr><th>Concepto</th><th>USD</th><th>DOP</th><th>Estado</th></tr></thead><tbody id="dashTable"><tr><td colspan="4" class="muted">Registra una importación para ver el resumen.</td></tr></tbody></table></div></div>
+</section>
+<section class="page" id="page-import">
+  
+
+
+  <div class="welcome"><div><div class="eyebrow">01 / IMPORT DATA</div><h1>Nueva importación</h1><p>Registra los datos de la factura y los modelos incluidos en el contenedor.</p></div><div class="btn-row"><span class="status warn">Borrador local</span><button class="btn" id="newQuoteReset" type="button">↺ Nueva cotización / Limpiar</button></div></div>
+  <div class="card"><div class="section-title"><h2>Datos generales del embarque</h2><small>Moneda base: USD</small></div>
+    <div class="form-grid">
+      <div class="field"><label>Nombre de la operación</label><input id="operation" value="Contenedor de aires acondicionados"></div>
+      <div class="field"><label>Tipo de mercancía</label><input id="productType" value="Aires acondicionados"></div>
+      <div class="field"><label>País de origen</label><input id="origin" value="China"></div>
+      <div class="field"><label>Valor FOB total (USD) · automático</label><input id="fob" type="number" min="0" step=".01" value="55300" readonly><small>Se calcula sumando unidades × precio unitario de cada modelo.</small></div>
+      <div class="field"><label>Flete internacional (USD)</label><input id="freight" type="number" min="0" step=".01" value="4500"></div>
+      <div class="field"><label>Seguro (% sobre FOB)</label><input id="insuranceRate" type="number" min="0" step=".01" value="1.01"><small>Porcentaje aplicado automáticamente al FOB.</small></div>
+      <div class="field"><label>Seguro calculado (USD)</label><input id="insurance" type="number" min="0" step=".01" value="558" readonly><small>Se actualiza al cambiar el FOB o el porcentaje.</small></div>
+      <div class="field"><label>Otros costos computables CIF (USD)</label><input id="otherCif" type="number" min="0" step=".01" value="0"><small>Solo costos que legalmente formen parte del valor aduanero.</small></div>
+      <div class="field"><label>Tipo de cambio (RD$ por USD)</label><input id="fx" type="number" min="0" step=".0001" value="62"></div>
+      <div class="field"><label>Código arancelario HS</label><input id="hs" placeholder="Pendiente de clasificación"></div>
+    </div>
+    <div class="subhead">Modelos / presentaciones</div>
+    <div class="note">Un solo tipo de mercancía por contenedor, con varios modelos. La suma del FOB de los modelos debe coincidir con el FOB total de la factura.</div>
+    <div class="table-wrap"><table><thead><tr><th>Modelo</th><th>Unidades</th><th>FOB unitario USD</th><th>FOB total USD</th><th></th></tr></thead><tbody id="modelsBody"></tbody></table></div>
+    <div class="btn-row" style="margin-top:12px"><button class="btn" id="addModel" type="button">＋ Agregar modelo</button><button class="btn primary" id="saveImport" type="button">Guardar y calcular</button></div>
+  </div>
+</section>
+<section class="page" id="page-cif">
+  <div class="welcome"><div><div class="eyebrow">02 / CUSTOMS VALUE</div><h1>Calculadora CIF</h1><p>Valor de factura, transporte, seguro y conversión a pesos dominicanos.</p></div></div>
+  <div class="grid two"><div class="card"><div class="section-title"><h2>Composición del CIF</h2><small>USD</small></div><div id="cifBreakdown"></div></div><div class="result-box"><div class="muted">VALOR CIF TOTAL</div><div class="big" id="cifTotal">$0.00</div><div class="muted">Conversión a pesos dominicanos</div><div class="big" id="cifDop">RD$0.00</div><div class="result-grid"><div class="result-mini"><small>FOB</small><b id="cifFob">$0</b></div><div class="result-mini"><small>Flete</small><b id="cifFreight">$0</b></div><div class="result-mini"><small>Seguro</small><b id="cifInsurance">$0</b></div></div></div></div>
+  <div class="note">El CIF mostrado es una simulación basada en los datos ingresados. La valoración aduanera definitiva puede requerir ajustes y validación documental.</div>
+</section>
+<section class="page" id="page-allocation">
+  <div class="welcome"><div><div class="eyebrow">03 / COST ALLOCATION</div><h1>Distribución de costos</h1><p>Asigna flete y seguro a cada modelo para conocer su costo puesto en destino.</p></div></div>
+  <div class="card"><div class="form-grid"><div class="field"><label>Método de distribución</label><select id="allocMethod"><option value="fob">Proporcional al FOB</option><option value="units">Por unidades</option><option value="weight">Por peso bruto (kg)</option><option value="cbm">Por volumen (CBM)</option><option value="manual">Por porcentaje manual</option></select></div><div class="field"><label>Flete a distribuir (USD)</label><input id="allocFreight" type="number" value="4500" min="0" step=".01"></div><div class="field"><label>Seguro a distribuir (USD)</label><input id="allocInsurance" type="number" value="558" min="0" step=".01"></div></div>
+  <div class="note">Para peso y CBM, completa esos datos en cada modelo. En distribución manual, introduce el porcentaje asignado y verifica que el total sea 100%.</div>
+  <div class="table-wrap"><table><thead><tr><th>Modelo</th><th>Unidades</th><th>FOB total</th><th>Peso kg</th><th>CBM</th><th>% manual</th><th>Flete asignado</th><th>Seguro asignado</th></tr></thead><tbody id="allocBody"></tbody></table></div>
+  <div class="btn-row" style="margin-top:14px"><button class="btn primary" id="runAllocation">Calcular distribución</button></div></div>
+  <div class="card" style="margin-top:16px"><div class="section-title"><h2>Resultado por modelo</h2><small>USD</small></div><div class="table-wrap"><table><thead><tr><th>Modelo</th><th>CIF asignado</th><th>CIF unitario</th><th>Unidades</th></tr></thead><tbody id="allocResult"></tbody></table></div></div>
+</section>
+<section class="page" id="page-taxes">
+  <div class="welcome"><div><div class="eyebrow">04 / CUSTOMS & TAXES</div><h1>Impuestos y aduanas</h1><p>Configura tasas para simular la liquidación de cada mercancía.</p></div><span class="status warn">Tasas por validar</span></div>
+  <div class="note">Las tasas iniciales son parámetros de demostración, no tasas oficiales verificadas. Confirma la clasificación HS, origen, preferencias, base imponible y vigencia con DGA antes de usar resultados para pagos o presupuestos definitivos.</div>
+  <div class="card"><div class="form-grid"><div class="field"><label>Gravamen (%)</label><input id="dutyRate" type="number" min="0" step=".01" value="20"></div><div class="field"><label>ITBIS (%)</label><input id="vatRate" type="number" min="0" step=".01" value="18"></div><div class="field"><label>Selectivo (%)</label><input id="exciseRate" type="number" min="0" step=".01" value="0"></div><div class="field"><label>Otros tributos (%)</label><input id="otherTaxRate" type="number" min="0" step=".01" value="0"></div><div class="field"><label>Base ITBIS</label><select id="vatBase"><option value="cif_duty_excise">CIF + gravamen + selectivo</option><option value="cif">Solo CIF (simulación)</option></select></div><div class="field"><label>Base selectivo</label><select id="exciseBase"><option value="cif_duty">CIF + gravamen</option><option value="cif">Solo CIF (simulación)</option></select></div></div>
+  <div class="btn-row" style="margin-top:15px"><button class="btn primary" id="calcTaxes">Calcular impuestos</button></div></div>
+  <div class="card" style="margin-top:16px"><div class="section-title"><h2>Liquidación estimada</h2><small>Por modelo · USD y DOP</small></div><div class="table-wrap"><table><thead><tr><th>Modelo</th><th>CIF DOP</th><th>Gravamen</th><th>Selectivo</th><th>ITBIS</th><th>Otros</th><th>Total tributos</th></tr></thead><tbody id="taxBody"></tbody></table></div><div class="result-box" style="margin-top:14px"><div class="muted">TOTAL TRIBUTOS ESTIMADOS</div><div class="big" id="taxTotal">RD$0.00</div><div class="muted">Estimación sujeta a clasificación y normativa aplicable.</div></div></div>
+</section>
+<section class="page" id="page-profit">
+  <div class="welcome"><div><div class="eyebrow">05 / BUSINESS INTELLIGENCE</div><h1>Business Profitability Analyzer</h1><p>Evalúa inversión, precio de venta, utilidad y retorno del negocio.</p></div><div class="pdf-actions"><button class="btn" id="pdfExecutive2">PDF ejecutivo</button><button class="btn primary" id="pdfDetailed2">PDF detallado</button></div></div>
+  <div class="grid kpis"><div class="card kpi"><div><div class="label">Inversión total estimada</div><div class="value" id="pInvestment">RD$0</div></div><div class="symbol">▣</div></div><div class="card kpi"><div><div class="label">Ingreso proyectado</div><div class="value" id="pRevenue">RD$0</div></div><div class="symbol">↗</div></div><div class="card kpi"><div><div class="label">Utilidad proyectada</div><div class="value" id="pProfit">RD$0</div></div><div class="symbol">◈</div></div><div class="card kpi"><div><div class="label">Margen sobre ventas</div><div class="value" id="pMargin">0%</div></div><div class="symbol">％</div></div></div>
+  <div class="grid two"><div class="card"><div class="section-title"><h2>Supuestos comerciales</h2><small>Editar para simular</small></div><div class="form-grid" style="grid-template-columns:repeat(2,1fr)"><div class="field"><label>Precio de venta por unidad (RD$)</label><input id="salePrice" type="number" min="0" value="0"></div><div class="field"><label>Unidades previstas a vender</label><input id="sellUnits" type="number" min="0" value="0"></div><div class="field"><label>Otros gastos comerciales (RD$)</label><input id="commercial" type="number" min="0" value="0"></div><div class="field"><label>Gastos operativos adicionales (RD$)</label><input id="operating" type="number" min="0" value="0"></div></div><div class="note">No se asume precio de venta. Introduce tus propios precios y gastos. La inversión incluye CIF convertido más tributos estimados; agrega gastos adicionales que no estén incluidos.</div><button class="btn primary" id="calcProfit">Actualizar rentabilidad</button></div>
+  <div class="card"><div class="section-title"><h2>Performance Overview</h2><small>Proyección</small></div><div class="metric-list"><div class="metric-row"><span>Costo nacionalizado</span><b id="pLanded">RD$0</b></div><div class="metric-row"><span>Gastos comerciales y operativos</span><b id="pExpenses">RD$0</b></div><div class="metric-row"><span>Punto de equilibrio por unidad</span><b id="pBreakEven">RD$0</b></div><div class="metric-row"><span>ROI sobre inversión</span><b id="pRoi">0%</b></div><div class="metric-row"><span>Markup sobre costo</span><b id="pMarkup">0%</b></div></div></div></div>
+  <div class="card" style="margin-top:16px"><div class="section-title"><h2>Resultado por modelo</h2><small>Rentabilidad estimada</small></div><div class="table-wrap"><table><thead><tr><th>Modelo</th><th>Unidades</th><th>Costo unitario DOP</th><th>Precio venta DOP</th><th>Ingreso</th><th>Utilidad antes de gastos</th></tr></thead><tbody id="profitBody"></tbody></table></div></div>
+</section>
+<section class="page" id="page-history">
+  <div class="welcome"><div><div class="eyebrow">WORKSPACE RECORDS</div><h1>Historial de importaciones</h1><p>Operaciones guardadas en este navegador.</p></div><button class="btn" id="clearHistory">Limpiar historial</button></div>
+  <div class="card"><div class="table-wrap"><table><thead><tr><th>Operación</th><th>Mercancía</th><th>FOB USD</th><th>CIF USD</th><th>Unidades</th><th>Fecha</th></tr></thead><tbody id="historyBody"><tr><td colspan="6" class="muted">Aún no hay operaciones guardadas.</td></tr></tbody></table></div></div>
+</section>
+<section class="page" id="page-settings">
+  <div class="welcome"><div><div class="eyebrow">PREFERENCES</div><h1>Configuración</h1><p>Preferencias de visualización y datos de esta versión de prueba.</p></div></div>
+  <div class="card"><div class="section-title"><h2>Apariencia</h2></div><div class="field" style="max-width:360px"><label>Tema de la plataforma</label><div class="theme-toggle settings-toggle" role="group" aria-label="Apariencia"><button type="button" class="theme-btn" data-theme-choice="light" aria-pressed="false">☀ <span>Light Mode</span></button><button type="button" class="theme-btn" data-theme-choice="dark" aria-pressed="false">☾ <span>Dark Mode</span></button></div></div><div class="note">La preferencia se guarda en este navegador y se aplica inmediatamente a toda la plataforma.</div><div class="subhead">Información de la plataforma</div><p><b>TRADE CARIBBEAN</b><br><span class="muted">By B2B Dominicana SRL · Prototipo HTML V4.3</span></p><p class="muted">Esta versión utiliza almacenamiento local. No incluye autenticación, sincronización en la nube ni catálogo arancelario oficial integrado.</p></div>
+</section>
+<div class="footer">TRADE CARIBBEAN · BY B2B DOMINICANA SRL · PROTOTIPO V4.3</div>
+</div></main></div>
+<script>
+const $=id=>document.getElementById(id), num=id=>Math.max(0,Number($(id)?.value)||0), money=(n,c='USD')=>new Intl.NumberFormat('en-US',{style:'currency',currency:c,maximumFractionDigits:2}).format(Number(n)||0), fmt=n=>new Intl.NumberFormat('en-US',{maximumFractionDigits:2}).format(Number(n)||0);
+let models=[{name:'Aire 12,000 BTU',units:150,unit:150,weight:0,cbm:0,manual:0},{name:'Aire 18,000 BTU',units:100,unit:190,weight:0,cbm:0,manual:0},{name:'Aire 24,000 BTU',units:60,unit:230,weight:0,cbm:0,manual:0}];
+let allocated=[], taxRows=[], history=JSON.parse(localStorage.getItem('tc_history')||'[]');
+function syncInsurance(){const fob=num('fob'),rate=num('insuranceRate');$('insurance').value=(fob*rate/100).toFixed(2);return num('insurance');}
+const getData=()=>({fob:num('fob'),freight:num('freight'),insurance:syncInsurance(),other:num('otherCif'),fx:num('fx')||1});
+const cif=()=>{let d=getData();return d.fob+d.freight+d.insurance+d.other};
+function renderModels(){
+ $('modelsBody').innerHTML=models.map((m,i)=>`<tr><td><input class="inline-input" data-m="name" data-i="${i}" value="${String(m.name??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}" style="width:170px"></td><td><input class="inline-input" data-m="units" data-i="${i}" type="number" min="0" value="${m.units}"></td><td><input class="inline-input" data-m="unit" data-i="${i}" type="number" min="0" step=".01" value="${m.unit}"></td><td><b>${money(m.units*m.unit)}</b></td><td><button class="btn" type="button" data-remove="${i}">×</button></td></tr>`).join('');
+ $('modelsBody').querySelectorAll('[data-m]').forEach(el=>el.addEventListener('input',()=>{
+   const i=Number(el.dataset.i),k=el.dataset.m;
+   if(!models[i])return;
+   if(k==='name'){models[i].name=el.value;return;}
+   models[i][k]=Math.max(0,Number(el.value)||0);
+   const row=el.closest('tr');const total=row?.querySelector('td:nth-child(4) b');if(total)total.textContent=money(models[i].units*models[i].unit);
+   autoRecalculate();
+ }));
+ $('modelsBody').querySelectorAll('[data-remove]').forEach(el=>el.addEventListener('click',()=>{models.splice(Number(el.dataset.remove),1);renderModels();autoRecalculate()}));
+}
+function renderAlloc(){ $('allocBody').innerHTML=models.map((m,i)=>`<tr><td>${m.name}</td><td>${fmt(m.units)}</td><td>${money(m.units*m.unit)}</td><td><input class="inline-input" data-a="weight" data-i="${i}" type="number" min="0" value="${m.weight}" style="width:70px"></td><td><input class="inline-input" data-a="cbm" data-i="${i}" type="number" min="0" step=".001" value="${m.cbm}" style="width:70px"></td><td><input class="inline-input" data-a="manual" data-i="${i}" type="number" min="0" max="100" step=".01" value="${m.manual}" style="width:75px"></td><td>—</td><td>—</td></tr>`).join('');$('allocBody').querySelectorAll('[data-a]').forEach(el=>el.addEventListener('change',()=>{models[+el.dataset.i][el.dataset.a]=Number(el.value)||0;autoRecalculate();}));}
+function distribute(){let method=$('allocMethod').value,fr=num('allocFreight'),ins=num('allocInsurance'),oth=num('otherCif');let weights=models.map(m=>method==='units'?m.units:method==='weight'?m.weight:method==='cbm'?m.cbm:method==='manual'?m.manual:m.units*m.unit);let sum=weights.reduce((a,b)=>a+b,0);if(!sum){alert('No hay base para distribuir. Completa FOB, unidades, peso, CBM o porcentajes.');return false}if(method==='manual'&&Math.abs(sum-100)>.01){alert('La distribución manual debe sumar 100%. Actualmente suma '+fmt(sum)+'%.');return false}allocated=models.map((m,i)=>{let share=method==='manual'?weights[i]/100:weights[i]/sum;let f=fr*share,s=ins*share,o=oth*share,fo=m.units*m.unit;return {...m,share,freight:f,insurance:s,other:o,cif:fo+f+s+o,unitCif:m.units?(fo+f+s+o)/m.units:0}});$('allocResult').innerHTML=allocated.map(a=>`<tr><td>${a.name}</td><td>${money(a.cif)}</td><td>${money(a.unitCif)}</td><td>${fmt(a.units)}</td></tr>`).join('');renderAlloc();return true}
+function calcTax(){if(!allocated.length)distribute();let d=getData(),duty=num('dutyRate')/100,vat=num('vatRate')/100,exc=num('exciseRate')/100,other=num('otherTaxRate')/100;taxRows=allocated.map(a=>{let base=a.cif*d.fx,grav=base*duty,excBase=$('exciseBase').value==='cif'?base:base+grav,sel=excBase*exc,vatBase=$('vatBase').value==='cif'?base:base+grav+sel,it=vatBase*vat,oth=base*other;return {...a,cifDop:base,grav,sel,it,oth,tax:grav+sel+it+oth,landed:base+grav+sel+it+oth}});$('taxBody').innerHTML=taxRows.map(t=>`<tr><td>${t.name}</td><td>${money(t.cifDop,'DOP')}</td><td>${money(t.grav,'DOP')}</td><td>${money(t.sel,'DOP')}</td><td>${money(t.it,'DOP')}</td><td>${money(t.oth,'DOP')}</td><td><b>${money(t.tax,'DOP')}</b></td></tr>`).join('');$('taxTotal').textContent=money(taxRows.reduce((s,t)=>s+t.tax,0),'DOP');return taxRows}
+function landedRows(){if(!taxRows.length)calcTax();return taxRows}
+function renderCif(){let d=getData(),v=cif();$('cifBreakdown').innerHTML=[['FOB',d.fob],['Flete',d.freight],['Seguro',d.insurance],['Otros computables',d.other]].map(x=>`<div class="metric-row" style="padding:10px 0;border-bottom:1px solid var(--line)"><span>${x[0]}</span><b>${money(x[1])}</b></div>`).join('');$('cifTotal').textContent=money(v);$('cifDop').textContent=money(v*d.fx,'DOP');$('cifFob').textContent=money(d.fob);$('cifFreight').textContent=money(d.freight);$('cifInsurance').textContent=money(d.insurance)}
+function renderProfit(){let rows=landedRows(),d=getData(),invest=rows.reduce((s,r)=>s+r.landed,0),units=rows.reduce((s,r)=>s+r.units,0),sale=num('salePrice'),sell=Math.min(num('sellUnits')||units,units),revenue=sale*sell,expenses=num('commercial')+num('operating'),profit=revenue-invest-expenses,margin=revenue?profit/revenue*100:0,roi=invest?(profit/invest*100):0,breakEven=units?(invest+expenses)/units:0,markup=invest?(profit/invest*100):0;
+$('pInvestment').textContent=money(invest,'DOP');$('pRevenue').textContent=money(revenue,'DOP');$('pProfit').textContent=money(profit,'DOP');$('pProfit').className='value '+(profit>=0?'positive':'negative');$('pMargin').textContent=fmt(margin)+'%';$('pLanded').textContent=money(invest,'DOP');$('pExpenses').textContent=money(expenses,'DOP');$('pBreakEven').textContent=money(breakEven,'DOP');$('pRoi').textContent=fmt(roi)+'%';$('pMarkup').textContent=fmt(markup)+'%';
+$('profitBody').innerHTML=rows.map(r=>{let unitCost=r.units?r.landed/r.units:0,rev=sale*Math.min(r.units,sell),p=rev-r.landed;return `<tr><td>${r.name}</td><td>${fmt(r.units)}</td><td>${money(unitCost,'DOP')}</td><td>${money(sale,'DOP')}</td><td>${money(rev,'DOP')}</td><td>${money(p,'DOP')}</td></tr>`}).join('');return {invest,revenue,profit,margin,units}}
+function refresh(){
+  const modelFob=models.reduce((s,m)=>s+(Number(m.units)||0)*(Number(m.unit)||0),0);
+  $('fob').value=modelFob.toFixed(2);
+  syncInsurance();
+  renderCif();
+  $('dashCif').textContent=money(cif());
+  let units=models.reduce((s,m)=>s+m.units,0);
+  $('dashUnits').textContent=fmt(units);
+  $('dashProduct').textContent=$('productType').value||'Mercancía';
+  $('statusData').textContent=modelFob?'Completo':'Pendiente';
+  if(allocated.length){$('statusAlloc').textContent='Calculada'}else{$('statusAlloc').textContent='Pendiente'}
+  if(taxRows.length){$('statusTax').textContent='Simulada';$('dashTax').textContent=money(taxRows.reduce((s,t)=>s+t.tax,0),'DOP')}else{$('statusTax').textContent='Pendiente';$('dashTax').textContent=money(0,'DOP')}
+  let p=renderProfit();
+  $('dashProfit').textContent=money(p.profit,'DOP');
+  $('statusProfit').textContent=num('salePrice')?'Proyectada':'Pendiente';
+  $('dashTable').innerHTML=`<tr><td>FOB</td><td>${money(getData().fob)}</td><td>${money(getData().fob*getData().fx,'DOP')}</td><td><span class="status">Calculado</span></td></tr><tr><td>Flete + seguro</td><td>${money(getData().freight+getData().insurance)}</td><td>${money((getData().freight+getData().insurance)*getData().fx,'DOP')}</td><td><span class="status">Ingresado</span></td></tr><tr><td>Valor CIF</td><td><b>${money(cif())}</b></td><td><b>${money(cif()*getData().fx,'DOP')}</b></td><td><span class="status">Calculado</span></td></tr>`;
+}
+function autoRecalculate(){
+  $('fob').value=models.reduce((s,m)=>s+(Number(m.units)||0)*(Number(m.unit)||0),0).toFixed(2);
+  allocated=[];taxRows=[];
+  if(models.length && models.some(m=>m.units*m.unit>0)){
+    const ok=distributeSilent();
+    if(ok) calcTax();
+  }
+  refresh();
+}
+function distributeSilent(){
+  let method=$('allocMethod').value,fr=num('allocFreight'),ins=num('allocInsurance'),oth=num('otherCif');
+  let weights=models.map(m=>method==='units'?m.units:method==='weight'?m.weight:method==='cbm'?m.cbm:method==='manual'?m.manual:m.units*m.unit);
+  let sum=weights.reduce((a,b)=>a+b,0);
+  if(!sum || (method==='manual'&&Math.abs(sum-100)>.01)) return false;
+  allocated=models.map((m,i)=>{let share=method==='manual'?weights[i]/100:weights[i]/sum;let f=fr*share,s=ins*share,o=oth*share,fo=m.units*m.unit;return {...m,share,freight:f,insurance:s,other:o,cif:fo+f+s+o,unitCif:m.units?(fo+f+s+o)/m.units:0}});
+  $('allocResult').innerHTML=allocated.map(a=>`<tr><td>${a.name}</td><td>${money(a.cif)}</td><td>${money(a.unitCif)}</td><td>${fmt(a.units)}</td></tr>`).join('');
+  return true;
+}
+
+function navigate(page){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));$('page-'+page).classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$('crumb').textContent=({dashboard:'Dashboard',import:'Nueva importación',cif:'Calculadora CIF',allocation:'Distribución de costos',taxes:'Impuestos y aduanas',profit:'Rentabilidad',history:'Historial',settings:'Configuración'})[page];$('sidebar').classList.remove('open');if(page==='allocation')renderAlloc();if(page==='profit')renderProfit();if(page==='taxes'&&allocated.length)calcTax()}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>navigate(b.dataset.page)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>navigate(b.dataset.go)));
+$('menuBtn').addEventListener('click',()=>$('sidebar').classList.toggle('open'));
+$('addModel').addEventListener('click',()=>{models.push({name:'Nuevo modelo',units:0,unit:0,weight:0,cbm:0,manual:0});renderModels();autoRecalculate()});
+$('saveImport').addEventListener('click',()=>{let sum=models.reduce((s,m)=>s+m.units*m.unit,0);$('fob').value=sum.toFixed(2);history.unshift({name:$('operation').value,product:$('productType').value,fob:num('fob'),cif:cif(),units:models.reduce((s,m)=>s+m.units,0),date:new Date().toLocaleDateString()});localStorage.setItem('tc_history',JSON.stringify(history));renderHistory();distribute();calcTax();refresh();alert('Importación guardada en este navegador.');navigate('cif')});
+$('runAllocation').addEventListener('click',()=>{if(distribute()){calcTax();refresh();alert('Distribución calculada correctamente.')}});$('calcTaxes').addEventListener('click',()=>{if(!allocated.length&&!distribute())return;calcTax();refresh();alert('Liquidación estimada actualizada. Revisa las tasas antes de usarla.');});$('calcProfit').addEventListener('click',()=>{renderProfit();refresh()});
+['salePrice','sellUnits','commercial','operating'].forEach(id=>$(id).addEventListener('input',()=>{renderProfit();refresh()}));
+function syncFreight(source){const value=String(Math.max(0,Number($(source).value)||0));const target=source==='freight'?'allocFreight':'freight';if($(target).value!==value)$(target).value=value;autoRecalculate();}
+$('freight').addEventListener('input',()=>syncFreight('freight'));
+$('allocFreight').addEventListener('input',()=>syncFreight('allocFreight'));
+['insuranceRate','otherCif','fx','productType','operation'].forEach(id=>$(id).addEventListener('input',()=>autoRecalculate()));
+['dutyRate','vatRate','exciseRate','otherTaxRate','vatBase','exciseBase'].forEach(id=>$(id).addEventListener('input',()=>{if(allocated.length)calcTax();refresh()}));
+['allocMethod','allocInsurance'].forEach(id=>$(id).addEventListener('input',()=>autoRecalculate()));
+function renderHistory(){$('historyBody').innerHTML=history.length?history.map(h=>`<tr><td>${h.name}</td><td>${h.product}</td><td>${money(h.fob)}</td><td>${money(h.cif)}</td><td>${fmt(h.units)}</td><td>${h.date}</td></tr>`).join(''):'<tr><td colspan="6" class="muted">Aún no hay operaciones guardadas.</td></tr>'}
+$('clearHistory').addEventListener('click',()=>{if(confirm('¿Eliminar historial local?')){history=[];localStorage.removeItem('tc_history');renderHistory()}});
+function setTheme(v){const actual=v==='dark'?'dark':'light';localStorage.setItem('tc_theme',actual);document.documentElement.dataset.theme=actual;document.querySelectorAll('[data-theme-choice]').forEach(b=>{const active=b.dataset.themeChoice===actual;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});}
+document.querySelectorAll('[data-theme-choice]').forEach(b=>b.addEventListener('click',()=>setTheme(b.dataset.themeChoice)));setTheme(localStorage.getItem('tc_theme')||'light');$('allocFreight').value=$('freight').value;syncInsurance();
+
+
+function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+function printReport(mode){
+  autoRecalculate();
+  if(!allocated.length){alert('Completa al menos un modelo con cantidad y precio unitario antes de generar el informe.');return;}
+  calcTax();
+  const d=getData(), rows=taxRows;
+  const totals=rows.reduce((a,r)=>{a.cif+=r.cifDop;a.tax+=r.tax;a.landed+=r.landed;a.units+=r.units;a.grav+=r.grav;a.sel+=r.sel;a.it+=r.it;a.oth+=r.oth;return a;},{cif:0,tax:0,landed:0,units:0,grav:0,sel:0,it:0,oth:0});
+  const profit=renderProfit(),includeUnit=$('includeUnitCost')?.checked!==false,detailed=mode==='detailed';
+  const currency=(v,cur='DOP')=>new Intl.NumberFormat('es-DO',{style:'currency',currency:cur,maximumFractionDigits:2}).format(Number(v)||0);
+  const date=new Date().toLocaleDateString('es-DO',{year:'numeric',month:'long',day:'numeric'});
+  const operation=escapeHtml($('operation').value||'Sin nombre');
+  const title=detailed?'Informe técnico detallado':'Informe ejecutivo';
+  const modelRows=rows.map(r=>`<tr><td>${escapeHtml(r.name)}</td><td>${fmt(r.units)}</td><td>${currency(r.cifDop)}</td>${includeUnit?`<td>${currency(r.units?r.landed/r.units:0)}</td>`:''}<td>${currency(r.tax)}</td><td>${currency(r.landed)}</td></tr>`).join('');
+  const taxRowsHtml=`<tr><td>Gravamen arancelario</td><td>${currency(totals.grav)}</td></tr><tr><td>Impuesto selectivo</td><td>${currency(totals.sel)}</td></tr><tr><td>ITBIS</td><td>${currency(totals.it)}</td></tr><tr><td>Otros tributos</td><td>${currency(totals.oth)}</td></tr><tr class="total"><td><b>TOTAL DE TRIBUTOS</b></td><td><b>${currency(totals.tax)}</b></td></tr>`;
+  const header=(page,total)=>`<header class="report-head"><div class="brand">TRADE CARIBBEAN<small>BY B2B DOMINICANA SRL</small></div><div class="head-meta"><h1>${title}</h1><b>${operation}</b><span>${date}</span></div></header>`;
+  const summary=`<section class="summary-grid"><div><small>FOB</small><b>${currency(d.fob,'USD')}</b></div><div><small>CIF</small><b>${currency(cif(),'USD')}</b></div><div><small>TOTAL TRIBUTOS</small><b>${currency(totals.tax)}</b></div><div class="grand-total"><small>TOTAL GENERAL DE INVERSIÓN</small><b>${currency(totals.landed)}</b></div></section>`;
+  const financial=`<h2>Resumen financiero</h2><table class="compact"><tbody><tr><td>FOB mercancía</td><td>${currency(d.fob,'USD')}</td></tr><tr><td>Flete internacional</td><td>${currency(d.freight,'USD')}</td></tr><tr><td>Seguro</td><td>${currency(d.insurance,'USD')}</td></tr><tr><td>Otros costos computables CIF</td><td>${currency(d.other,'USD')}</td></tr><tr><td>Valor CIF</td><td>${currency(cif(),'USD')} / ${currency(cif()*d.fx)}</td></tr><tr><td>Tipo de cambio</td><td>RD$ ${fmt(d.fx)} por USD</td></tr>${taxRowsHtml}<tr class="grand-row"><td><b>TOTAL GENERAL DE INVERSIÓN</b></td><td><b>${currency(totals.landed)}</b></td></tr></tbody></table>`;
+  const modelsTable=`<h2>Detalle por modelo / presentación</h2><table><thead><tr><th>Modelo</th><th>Unidades</th><th>CIF asignado</th>${includeUnit?'<th>Costo unitario</th>':''}<th>Tributos</th><th>Costo total</th></tr></thead><tbody>${modelRows}</tbody></table>`;
+  const technical=`<h2>Parámetros aduaneros utilizados</h2><table class="compact"><tbody><tr><td>Código HS</td><td>${escapeHtml($('hs').value||'Pendiente de clasificación')}</td></tr><tr><td>Gravamen</td><td>${fmt(num('dutyRate'))}%</td></tr><tr><td>ITBIS</td><td>${fmt(num('vatRate'))}% · ${escapeHtml($('vatBase').selectedOptions[0]?.text||'')}</td></tr><tr><td>Selectivo</td><td>${fmt(num('exciseRate'))}% · ${escapeHtml($('exciseBase').selectedOptions[0]?.text||'')}</td></tr><tr><td>Otros tributos</td><td>${fmt(num('otherTaxRate'))}%</td></tr></tbody></table><h2>Rentabilidad proyectada</h2><table class="compact"><tbody><tr><td>Ingresos proyectados</td><td>${currency(profit.revenue)}</td></tr><tr><td>Utilidad proyectada</td><td>${currency(profit.profit)}</td></tr><tr><td>Margen</td><td>${fmt(profit.margin)}%</td></tr><tr><td>ROI</td><td>${fmt(totals.landed?profit.profit/totals.landed*100:0)}%</td></tr></tbody></table>`;
+  const note=`<p class="note">Los importes reflejan los datos y las tasas introducidas en esta cotización. Verifica la clasificación arancelaria y las tasas vigentes con las autoridades o un agente aduanal. Este informe es una estimación y no sustituye una liquidación oficial.</p>`;
+  // A compact report fits on one A4 sheet when there are up to three models.
+  // Larger reports are deliberately split into two balanced, numbered pages.
+  const onePage=!detailed || rows.length<=3;
+  const page1=detailed
+    ? `${summary}${financial}${onePage?modelsTable+technical+note:''}`
+    : `${summary}${financial}${modelsTable}${note}`;
+  const page2=detailed&&!onePage
+    ? `<h2>Continuación · Detalle de mercancía</h2>${modelsTable}${technical}${note}`:'';
+  const pages=page2?[page1,page2]:[page1];
+  const popup=window.open('','_blank');
+  if(!popup){alert('El navegador bloqueó la ventana del informe. Permite ventanas emergentes para este sitio.');return;}
+  popup.document.write(`<!doctype html><html lang="es"><head><meta charset="utf-8"><title>${title} · ${operation}</title><style>
+  *{box-sizing:border-box}html,body{margin:0;padding:0;background:#F5F7FA;color:#202B3A;font:10px/1.38 Arial,sans-serif}
+  .toolbar{position:sticky;top:0;z-index:2;text-align:right;background:#fff;padding:10px calc((100% - 190mm)/2);border-bottom:1px solid #DFE6EF}
+  .toolbar button{border:0;border-radius:8px;padding:9px 15px;background:#3478D4;color:#fff;font-weight:700;cursor:pointer}
+  .sheet{width:190mm;min-height:267mm;margin:10mm auto;background:#fff;padding:13mm 14mm 12mm;position:relative;box-shadow:0 8px 30px rgba(20,36,58,.10);display:flex;flex-direction:column}
+  .report-head{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:8mm;border-bottom:2px solid #3478D4;margin-bottom:6mm}
+  .brand{font-size:17px;letter-spacing:1.1px;font-weight:800;color:#14243A}.brand small{display:block;font-size:8px;letter-spacing:1.5px;color:#68778A;margin-top:3px}
+  .head-meta{text-align:right}.head-meta h1{font-size:16px;margin:0 0 4px;color:#202B3A}.head-meta span{display:block;color:#68778A;margin-top:3px}
+  h2{font-size:11px;color:#14243A;margin:5mm 0 2mm;padding-bottom:4px;border-bottom:1px solid #e1e9e3}
+  .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 4mm}
+  .summary-grid>div{background:#F5F7FA;border:1px solid #DFE6EF;border-radius:6px;padding:8px}.summary-grid small{display:block;font-size:7px;color:#748278;margin-bottom:4px}.summary-grid b{font-size:11px}
+  .summary-grid .grand-total{background:#EAF1FB;border-color:#D5E2F3}.grand-total b{font-size:13px;color:#245A9E}
+  table{width:100%;border-collapse:collapse;margin:2mm 0 3mm;table-layout:auto}th,td{border-bottom:1px solid #E3E9F1;text-align:left;padding:5px 6px;font-size:8.5px;vertical-align:top}th{background:#EAF0F7;color:#344B67;font-weight:700}
+  td:last-child,th:last-child{text-align:right}.compact td:first-child{width:65%;color:#68778A}.compact td:last-child{text-align:right}
+  .total td{background:#EAF1FB;font-weight:700;color:#245A9E}.grand-row td{background:#DCE9F8;font-weight:800;color:#173F70}
+  .note{margin-top:auto;padding:7px 9px;background:#F5F7FA;border-left:2px solid #3478D4;color:#68778A;font-size:7.5px}
+  .page-foot{display:flex;justify-content:space-between;border-top:1px solid #DFE6EF;padding-top:5px;margin-top:5mm;color:#7A8797;font-size:7.5px}
+  .sheet+.sheet{page-break-before:always}
+  @page{size:A4 portrait;margin:0}
+  @media print{html,body{background:#fff}.toolbar{display:none}.sheet{width:210mm;height:297mm;min-height:297mm;margin:0;padding:13mm 14mm 12mm;box-shadow:none;page-break-after:always;break-after:page}.sheet:last-child{page-break-after:auto;break-after:auto}.sheet+.sheet{page-break-before:always;break-before:page}}
+  </style></head><body><div class="toolbar"><button onclick="window.print()">Imprimir / Guardar PDF</button></div>
+  ${pages.map((content,i)=>`<article class="sheet">${header(i+1,pages.length)}${content}<footer class="page-foot"><span>TRADE CARIBBEAN · By B2B Dominicana SRL · ${operation}</span><b>Página ${i+1} de ${pages.length}</b></footer></article>`).join('')}
+  </body></html>`);
+  popup.document.close();
+}
+['pdfExecutive','pdfExecutive2'].forEach(id=>$(id)?.addEventListener('click',()=>printReport('executive')));
+['pdfDetailed','pdfDetailed2'].forEach(id=>$(id)?.addEventListener('click',()=>printReport('detailed')));
+
+
+function resetNewQuote(){
+  ['operation','productType','hs'].forEach(id=>$(id).value='');
+  $('origin').value='';
+  ['freight','otherCif','salePrice','sellUnits','commercial','operating'].forEach(id=>$(id).value='0');
+  $('insuranceRate').value='1.01';
+  $('fx').value='62';$('dutyRate').value='20';$('vatRate').value='18';$('exciseRate').value='0';$('otherTaxRate').value='0';
+  $('allocMethod').value='fob';$('allocFreight').value='0';$('allocInsurance').value='0';
+  $('vatBase').value='cif_duty_excise';$('exciseBase').value='cif_duty';
+  models=[{name:'',units:0,unit:0,weight:0,cbm:0,manual:0}];allocated=[];taxRows=[];
+  $('includeUnitCost')?.setAttribute('checked','checked');
+  renderModels();syncInsurance();autoRecalculate();navigate('import');
+}
+$('newQuoteReset').addEventListener('click',resetNewQuote);
+
+// Initial render: populate model rows and synchronize all derived values.
+renderModels();renderHistory();autoRecalculate();
+
+</script>
+</body></html>
